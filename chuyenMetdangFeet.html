@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi met và feet</title>
+</head>
+<body>
+    <p><span> Giá trị :</span>
+    <input type="number" id="inputValue" >
+    </p>
+    <input type="button" onclick="toMet()" value="chuyển sang met">
+    <input type="button" onclick="toFeet()" value="chuyển sang feet"><br>
+    <span id="result"></span>
+    <script>
+        let number=parseInt(document.getElementById("inputValue").value);
+        function toMet() {
+            let result =number*3.279;
+            document.getElementById("result").innerHTML=result;
+        }
+        function toFeet() {
+            let result=number*0.305;
+            document.getElementById("result").innerHTML=result;
+        }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
